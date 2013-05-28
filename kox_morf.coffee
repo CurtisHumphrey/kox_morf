@@ -23,5 +23,6 @@ ko.bindingHandlers.morf =
     
     ##valueAccessor should be object {css {}, parameters {}}
     value = ko.utils.unwrapObservable(valueAccessor());
-    if value
+    
+    if value      
       element[has_morf] = Morf.transition element, value.css, value.parameters
