@@ -55,6 +55,5 @@ var effect = ko.observable( {
 ## Other files
 were used to develop or whatnot
 
-
 # License
 KOX_Morf is Copyright © 2013 Curtis M. Humphrey and is licensed under the terms of the MIT License.
