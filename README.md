@@ -32,7 +32,7 @@ effect = ko.observable
 ### Javascript
 ```javascript
 // in javascript
-effect = ko.observable {
+var effect = ko.observable( {
 	// New CSS State
 	css: {
 		'color': '#F3F3F3'
@@ -43,7 +43,7 @@ effect = ko.observable {
     timingFunction: 'ease-out',
     callback: callback ? callback : void 0
 	}
-}
+});
 ```
 
 # Repo Files
