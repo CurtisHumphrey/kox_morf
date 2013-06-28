@@ -25,14 +25,14 @@ effect = ko.observable
 	# Additional Parameters as listed in morf
 	parameters:
 		duration: '300ms'
-    timingFunction: 'ease-out'
-    callback: callback if callback
+		timingFunction: 'ease-out'
+		callback: callback if callback
 ```
 
 ### Javascript
 ```javascript
 // in javascript
-effect = ko.observable {
+var effect = ko.observable( {
 	// New CSS State
 	css: {
 		'color': '#F3F3F3'
@@ -40,10 +40,10 @@ effect = ko.observable {
 	// Additional Parameters as listed in morf
 	parameters: {
 		duration: '300ms',
-    timingFunction: 'ease-out',
-    callback: callback ? callback : void 0
+		timingFunction: 'ease-out',
+		callback: callback ? callback : void 0
 	}
-}
+});
 ```
 
 # Repo Files
