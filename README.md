@@ -4,6 +4,7 @@ KOX_Morf is a [knockout.js](http://knockoutjs.com/) [custom binding](http://knoc
 
 # Requirements
 - Knockoutjs
+- requirejs
 
 # How do I use it?
 
@@ -56,4 +57,4 @@ var effect = ko.observable( {
 were used to develop or whatnot
 
 # License
-KOX_Morf is Copyright © 2013 Curtis M. Humphrey and is licensed under the terms of the MIT License.
+KOX_Morf is Copyright © 2014 Curtis M. Humphrey and is licensed under the terms of the MIT License.

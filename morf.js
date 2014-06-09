@@ -137,7 +137,6 @@ var Morf = function(elem, css, opts) {
 		elem.style.webkitTransitionTimingFunction = options.timingFunction;
 		
 		// Listen for the transitionEnd event to fire the callback if needed
-		elem._morf_timeout_id = false
 		var transitionEndListener = function(event) {
 			elem.removeEventListener('webkitTransitionEnd', transitionEndListener, true);
 			
@@ -146,10 +145,8 @@ var Morf = function(elem, css, opts) {
 			elem.style.webkitTransitionTimingFunction = null;
 			
 			if (options.callback) {
-				if (elem._morf_timeout_id) clearTimeout(elem._morf_timeout_id);
-				
 				// Delay execution to ensure the clean up CSS has taken effect
-				elem._morf_timeout_id = setTimeout(function() {
+				setTimeout(function() {
 					options.callback(elem);
 				}, 10);
 			}
